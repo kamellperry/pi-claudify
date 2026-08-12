@@ -1,0 +1,80 @@
+{
+  "name": "@owlburtoe/pi-claudify",
+  "version": "2.5.1",
+  "description": "Claude Code-style tool rows for pi with Ctrl+O image previews and consistent built-in, MCP, and custom tool rendering",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "claude-code",
+    "pi",
+    "tool-renderer",
+    "mcp",
+    "terminal-images",
+    "shiki",
+    "diff"
+  ],
+  "license": "MIT",
+  "author": "FammasMaz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://forgejo.owlburtoe.dev/owlburtoe/pi-claudify.git"
+  },
+  "homepage": "https://forgejo.owlburtoe.dev/owlburtoe/pi-claudify",
+  "bugs": {
+    "url": "https://forgejo.owlburtoe.dev/owlburtoe/pi-claudify/issues"
+  },
+  "files": [
+    "README.md",
+    "config/config.example.json",
+    "extensions/index.ts",
+    "extensions/claudify-screen.ts",
+    "extensions/footer.ts",
+    "extensions/inspection-summary.ts",
+    "extensions/message-chrome.ts",
+    "extensions/mutation-summary.ts",
+    "extensions/settings.ts",
+    "extensions/spinner.ts"
+  ],
+  "scripts": {
+    "bench:tools": "bun scripts/benchmark-tools.ts",
+    "test:bash-display": "bun scripts/test-bash-display.ts",
+    "test:message-chrome": "bun scripts/test-message-chrome.ts",
+    "test:compaction": "bun scripts/test-compaction.ts",
+    "test:settings-reader": "bun scripts/test-settings-reader.ts",
+    "test:diff-body": "bun scripts/test-diff-body.ts",
+    "test:inspection-summary": "bun scripts/test-inspection-summary.ts",
+    "test:mutation-summary": "bun scripts/test-mutation-summary.ts",
+    "test": "bun scripts/test-settings-reader.ts && bun scripts/test-message-chrome.ts && bun scripts/test-compaction.ts && bun scripts/test-bash-display.ts && bun scripts/test-inspection-summary.ts && bun scripts/test-mutation-summary.ts && bun scripts/test-diff-body.ts && bun scripts/test-worked-verbs.ts && bun scripts/test-tool-chrome.ts && bun scripts/test-mcp-display.ts && bun scripts/test-readonly-aggregation.ts && bun scripts/test-spinner-cadence.ts && bun scripts/test-plane-refs.ts && bun scripts/test-claudify-hub.ts && bun scripts/test-footer.ts",
+    "test:footer": "bun scripts/test-footer.ts",
+    "test:spinner-cadence": "bun scripts/test-spinner-cadence.ts",
+    "test:plane-refs": "bun scripts/test-plane-refs.ts",
+    "test:mcp-display": "bun scripts/test-mcp-display.ts",
+    "test:readonly-aggregation": "bun scripts/test-readonly-aggregation.ts",
+    "test:worked-verbs": "bun scripts/test-worked-verbs.ts",
+    "test:tool-chrome": "bun scripts/test-tool-chrome.ts",
+    "test:claudify-hub": "bun scripts/test-claudify-hub.ts"
+  },
+  "dependencies": {
+    "@shikijs/cli": "^4.3.1",
+    "diff": "^9.0.0",
+    "shiki": "^4.3.1"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.74.0",
+    "@earendil-works/pi-tui": ">=0.74.0",
+    "@sinclair/typebox": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/index.ts",
+      "./extensions/spinner.ts"
+    ]
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "latest",
+    "@earendil-works/pi-tui": "latest",
+    "@sinclair/typebox": "latest",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2"
+  }
+}

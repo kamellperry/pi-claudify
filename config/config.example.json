@@ -1,0 +1,37 @@
+{
+  "toolBackground": "transparent",
+  "readOutputMode": "preview",
+  "searchOutputMode": "preview",
+  "mcpOutputMode": "preview",
+  "previewLines": 8,
+  "expandedPreviewMaxLines": 4000,
+  "bashOutputMode": "opencode",
+  "bashCollapsedLines": 10,
+  "bashStackConsecutive": true,
+  "bashSemanticDisplay": true,
+  "readOnlyToolGrouping": true,
+  "readOnlyToolGroupLimit": 5,
+  "diffCollapsedLines": 24,
+  "showTruncationHints": false,
+  "themeAdaptive": true,
+  "diffPalette": "claude",
+  "toolChrome": "claude",
+  "diffTheme": "monokai",
+  "diffColors": {},
+  "spinnerColor": "borderAccent",
+  "spinnerVerbs": [
+    "Reviewing",
+    "Polishing"
+  ],
+  "spinnerVerbMode": "append",
+  "messageStyle": "claude",
+  "assistantPrefix": "⏺",
+  "thinkingPrefix": "✻",
+  "messageSpacing": "comfortable",
+  "hiddenThinkingLabel": "Pondering...",
+  "workedVerbs": [
+    "Hacked",
+    "Tinkered"
+  ],
+  "workedVerbMode": "append"
+}
