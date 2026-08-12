@@ -1,5 +1,7 @@
 # pi-claudify
 
+> **This is a mirror** of [@owlburtoe/pi-claudify](https://forgejo.owlburtoe.dev/owlburtoe/pi-claudify) on Forgejo. Issues and pull requests should go to the [upstream repo](https://forgejo.owlburtoe.dev/owlburtoe/pi-claudify/issues).
+
 Claude Code style rendering for [pi](https://github.com/earendil-works/pi), published as `@owlburtoe/pi-claudify` (formerly `@owlburtoe/pi-cc-tools`). Tool rows, diffs, and transcript grammar that match what Claude Code actually prints, captured from live sessions instead of guessed.
 
 ## Why this exists
